@@ -174,30 +174,37 @@ h1 { font-size: clamp(2.1rem, 9vw, 4.1rem); text-shadow: 0 2px 30px #000; }
   transform-origin: bottom center;
 }
 
-.flower { position: absolute; display: block; width: 29%; aspect-ratio: 1; border-radius: 50%; filter: drop-shadow(0 6px 4px #12051599); }
-.flower::before, .flower::after { position: absolute; inset: 19%; content: ''; border-radius: 50%; }
-.flower i { position: absolute; z-index: 2; top: 37%; left: 37%; width: 27%; aspect-ratio: 1; border-radius: 50%; }
+.flower { position: absolute; display: block; width: 29%; aspect-ratio: 1; border-radius: 50%; filter: drop-shadow(0 7px 5px #120515aa); }
+.flower::before, .flower::after { position: absolute; content: ''; border-radius: 50%; }
+.flower i { position: absolute; z-index: 3; top: 37%; left: 37%; width: 27%; aspect-ratio: 1; border-radius: 50%; }
 
-.rose { background: conic-gradient(from 0deg, #ac0b3e, #ff5c89, #85002c, #e51e5f, #a30638); }
-.rose::before { background: conic-gradient(#ffb3c9, #be073f, #f13a6d, #8a002b, #ff9abb); transform: rotate(25deg); }
-.rose::after { background: #cf164b; transform: scale(.48); }
-.rose i { background: #ffe3eb; opacity: .7; }
-.rose.white { background: conic-gradient(#fff, #d9c5da, #fffefa, #d4c4d9, #fff); }
-.rose.white::before { background: conic-gradient(#fff, #dbd1df, #fff, #cbb9cf, #fff); }
-.rose.white::after { background: #f4edf1; }
-.rose.white i { background: #f7cf84; opacity: 1; }
+.rose { overflow: hidden; background: repeating-conic-gradient(from 8deg, #a70037 0 18deg, #ff6a98 19deg 38deg, #dc174f 39deg 56deg); box-shadow: inset 0 0 0 3px #ffb0c9aa, inset -8px -8px 12px #67001f55; }
+.rose::before { inset: 13%; background: repeating-conic-gradient(from -15deg, #ffabc5 0 25deg, #c00042 26deg 52deg, #f63c70 53deg 72deg); box-shadow: inset 0 0 8px #790027aa; transform: rotate(28deg); }
+.rose::after { z-index: 2; inset: 31%; background: radial-gradient(circle at 35% 30%, #fff0f5 0 5%, #f94479 10%, #a90039 62%, #700021 100%); box-shadow: 0 0 0 4px #d7124d88; }
+.rose i { background: #ffe7ef; box-shadow: 0 0 8px #fff8; opacity: .82; }
+.rose.white { background: repeating-conic-gradient(from 10deg, #fff 0 19deg, #ded1df 20deg 37deg, #fffdfa 38deg 57deg); box-shadow: inset 0 0 0 3px #fff, inset -8px -8px 13px #b8a5bc66; }
+.rose.white::before { background: repeating-conic-gradient(from 8deg, #fff 0 23deg, #e3d8e4 24deg 47deg, #fff 48deg 67deg); box-shadow: inset 0 0 8px #c9b7ca99; }
+.rose.white::after { background: radial-gradient(circle at 35% 30%, #fff 0 8%, #fff5fa 23%, #d9cadb 70%, #bba8bc); box-shadow: 0 0 0 4px #fff9; }
+.rose.white i { background: #f7c869; box-shadow: 0 0 7px #fff; opacity: 1; }
 
-.sunflower { background: repeating-conic-gradient(#ffcb27 0 10deg, #e79108 11deg 20deg); }
-.sunflower::before { inset: 27%; z-index: 1; background: #63320b; box-shadow: inset 0 0 0 5px #8e510f; }
-.sunflower::after { inset: 38%; z-index: 2; background: radial-gradient(#e8a629 15%, #54300e 18% 60%, #27150b 63%); }
+.sunflower { background: repeating-conic-gradient(#ffd93a 0 9deg, #f49b08 10deg 19deg); box-shadow: inset 0 0 0 3px #ffef8a, inset -7px -8px 10px #b6640055; }
+.sunflower::before { inset: 25%; z-index: 1; background: #63320b; box-shadow: inset 0 0 0 5px #9f6017, 0 0 0 4px #f5ae10; }
+.sunflower::after { inset: 37%; z-index: 2; background: radial-gradient(#f8ca39 10%, #78420d 16% 58%, #2c1708 61%); }
 .sunflower i { display: none; }
 
 .rose-left { bottom: 35%; left: 5%; transform: rotate(-16deg); }
+.rose-top-left { top: 0; left: 18%; width: 25%; transform: rotate(-12deg); }
 .rose-center { top: 7%; left: 34%; width: 34%; }
 .sunflower-left { top: 18%; left: 0; width: 31%; transform: rotate(-16deg); }
+.sunflower-center { top: 1%; left: 39%; width: 25%; transform: rotate(7deg); }
 .rose-right { right: 3%; bottom: 32%; transform: rotate(17deg); }
+.rose-top-right { top: 2%; right: 17%; width: 25%; transform: rotate(16deg); }
 .sunflower-right { top: 16%; right: 2%; width: 31%; transform: rotate(14deg); }
 .rose-far { top: 25%; left: 36%; width: 25%; opacity: .91; }
+
+.leaf { position: absolute; z-index: -1; bottom: 18%; width: 24%; height: 12%; border-radius: 100% 0 100% 0; background: linear-gradient(135deg, #8fce7c, #1b6d3b 54%, #0b3d26); box-shadow: inset 3px 3px 5px #d7ffd155; }
+.leaf-left { left: 7%; transform: rotate(-31deg); }
+.leaf-right { right: 7%; transform: scaleX(-1) rotate(-31deg); }
 
 .stem { position: absolute; bottom: 4%; width: 7px; height: 58%; border-radius: 20px; background: linear-gradient(90deg, #0b482d, #3d9c53, #0a3928); transform-origin: bottom; }
 .stem-one { left: 36%; transform: rotate(-20deg); }
