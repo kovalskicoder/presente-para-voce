@@ -125,6 +125,7 @@ h1 { font-size: clamp(2.1rem, 9vw, 4.1rem); text-shadow: 0 2px 30px #000; }
 }
 
 .box {
+  z-index: 4;
   bottom: 3%;
   height: 44%;
   overflow: hidden;
@@ -165,24 +166,26 @@ h1 { font-size: clamp(2.1rem, 9vw, 4.1rem); text-shadow: 0 2px 30px #000; }
 .bouquet {
   position: absolute;
   z-index: 3;
-  bottom: 30%;
+  bottom: 25%;
   left: 50%;
-  width: 68%;
-  height: 62%;
+  width: clamp(118px, 38vw, 142px);
+  aspect-ratio: 2 / 3;
+  height: auto;
   opacity: 0;
+  pointer-events: none;
   transform: translate(-50%, 38%) scale(.62);
   transform-origin: bottom center;
 }
 
 .bouquet-image {
   position: absolute;
-  bottom: -7%;
+  bottom: 0;
   left: 50%;
   display: block;
-  width: 82%;
+  width: 100%;
   height: auto;
   transform: translateX(-50%);
-  clip-path: inset(0 0 20% 0);
+  clip-path: inset(0 0 27% 0);
   filter: drop-shadow(0 12px 12px rgba(0, 0, 0, .48));
 }
 
