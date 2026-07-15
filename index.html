@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#09050d" />
+    <meta name="description" content="Um presente feito com amor." />
+    <title>Um presente para você</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="photo-background" aria-hidden="true">
+      <div class="photo photo-one"></div>
+      <div class="photo photo-two"></div>
+      <div class="photo photo-three"></div>
+      <div class="photo-shade"></div>
+    </div>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">feito especialmente para você</p>
+        <h1 id="hero-title">Tenho um presente<br />para você</h1>
+        <p class="hint" id="gift-hint">Toque no presente para abrir</p>
+
+        <button class="gift" id="gift" type="button" aria-expanded="false" aria-describedby="gift-hint">
+          <span class="sr-only">Abrir seu presente</span>
+          <span class="spark spark-one"></span>
+          <span class="spark spark-two"></span>
+          <span class="spark spark-three"></span>
+
+          <span class="bouquet" aria-hidden="true">
+            <span class="flower rose red rose-left"><i></i></span>
+            <span class="flower rose white rose-center"><i></i></span>
+            <span class="flower sunflower sunflower-left"><i></i></span>
+            <span class="flower rose red rose-right"><i></i></span>
+            <span class="flower sunflower sunflower-right"><i></i></span>
+            <span class="flower rose white rose-far"><i></i></span>
+            <span class="stem stem-one"></span>
+            <span class="stem stem-two"></span>
+            <span class="stem stem-three"></span>
+            <span class="wrap"></span>
+          </span>
+
+          <span class="lid" aria-hidden="true">
+            <span class="lid-ribbon"></span>
+            <span class="bow bow-left"></span>
+            <span class="bow bow-right"></span>
+            <span class="knot"></span>
+          </span>
+          <span class="box" aria-hidden="true">
+            <span class="box-ribbon"></span>
+            <span class="box-glow"></span>
+          </span>
+        </button>
+
+        <p class="opened-message" aria-live="polite">Um buquê para a pessoa que deixa tudo mais bonito. ✨</p>
+        <a class="scroll-cue" href="#carta" aria-label="Ir para a sua carta de amor">
+          <span>deslize para baixo</span>
+          <b>↓</b>
+        </a>
+      </section>
+
+      <section class="love-letter" id="carta" aria-labelledby="letter-title">
+        <div class="letter-card">
+          <p class="eyebrow">para o meu amor</p>
+          <h2 id="letter-title">Você é meu lugar favorito.</h2>
+          <div class="letter-copy">
+            <p>
+              Em cada dia ao seu lado, eu encontro mais um motivo para agradecer por ter você na minha vida.
+              Você transforma os momentos simples em memórias que eu quero guardar para sempre.
+            </p>
+            <p>
+              Este presente é só uma pequena forma de te dar flores pois pessoalmente ainda não consegui, não é grande coisa é só um agrado uma pequena demonstração de afeto.
+            </p>
+            <p class="signature">Eu amo você, hoje e em todos os próximos dias. <span>♥</span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
